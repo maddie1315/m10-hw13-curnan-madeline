@@ -1,7 +1,7 @@
 // capture references to important DOM elements
-var weatherContainer = document.getElementById('weather');
-var formEl = document.querySelector('form');
-var inputEl = document.querySelector('input');
+let weatherContainer = document.getElementById('weather');
+const formEl = document.querySelector('form');
+const inputEl = document.querySelector('input');
 
 
 formEl.onsubmit = function(e) {
@@ -62,7 +62,7 @@ function getWeather(query) {
 }
 
 // show error message when location isn't found
-function displayLocNotFound() {
+displayLocNotFound = () => {
   // clears any previous weather info
   weatherContainer.innerHTML = "";
   // create h2, add error msg, and add to page
@@ -110,9 +110,7 @@ function displayWeatherInfo(weatherObj) {
 
   // current temperature
   var temp = document.createElement('p')
-  temp.textContent = "Current: " +
-    weatherObj.actualTemp +
-    "° F"
+  temp.textContent = `Current: ${weatherObj.actualTemp}° F`
   weatherContainer.appendChild(temp)
 
   // "feels like" temperature
