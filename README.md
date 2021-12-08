@@ -4,4 +4,4 @@
 
 ### No outside resources were used.
 
-##### I did not complete transforming a promise based function to async/await, or destructuring an object. 
+##### I did not complete transforming a promise based function to async/await, or destructuring an object, sorry!! 
